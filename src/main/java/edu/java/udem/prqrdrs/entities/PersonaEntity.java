@@ -21,7 +21,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity //Indica que esta clase va a ser una entidad de la BD. Mapea con una tabla de BD
+@Entity //Anotación de JPA que indica que esta clase va a ser una entidad de la BD. Mapea con una tabla de BD
 @Table(name = "users") //Indica el nombre de la tabla con la que se va a relacionar esta entidad. Es opcional, si no se coloca la tabla se llama como la clase.
 @Data //Ayuda con los get y set para no escribirlos. Autogenera el encapsulamiento de los parámetros.
 @Builder //Implementa el patrón Builder Factory

@@ -8,24 +8,18 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>edu.java.udem.prqdrs</groupId>
-    <artifactId>prqdrs</artifactId>
+    <groupId>edu.java.udem.prqrdrs</groupId>
+    <artifactId>prqrdrs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>prqdrs</name>
-    <description>Prqdrsfor Spring Boot</description>
+    <name>prqrdrs</name>
+    <description>Prqrdrsfor Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
         <h2.version>1.4.199</h2.version>
-        <start-class>edu.java.udem.prqdrs.PrqdrsApplication</start-class>
     </properties>
 
     <dependencies>
-        <!--<dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <version>3.7.0</version>
-        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -35,7 +29,7 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>${h2.version}</version>
-        </dependency>
+        </dependency>      
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -56,14 +50,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <!-- <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-security</artifactId>
+        <!--        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -84,9 +79,9 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
-        </dependency> 
+        </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
