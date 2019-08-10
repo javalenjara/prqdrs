@@ -15,4 +15,6 @@ spring:
     console:
       enabled: true
       path: /console
-      settings: {trace: false, web-allow-others: false}
+      settings: {trace: false, web-allow-others: true}
+  liquibase:
+    change-log: classpath:/db/db-changelog.yml

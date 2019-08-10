@@ -1,0 +1,71 @@
+databaseChangeLog:
+    - changeSet:
+        id: 1
+        author: jpramirez
+        changes:
+            - createTable:
+                tableName: users
+                columns:
+                    - column:
+                        name: id
+                        type: int
+                        autoIncrement: true
+                        constraints:
+                            primaryKey: true
+                            nullable: false
+                    - column:
+                        name: login
+                        type: varchar(255)                            
+                    - column:
+                        name: email
+                        type: varchar(255)
+                    - column:
+                        name: password
+                        type: varchar(255)
+                    - column:
+                        name: nombre
+                        type: varchar(255)
+                    - column:
+                        name: apellido
+                        type: varchar(255)
+    - changeSet:
+        id: 3
+        author: jpramirezl
+        comment: "Insertar users en base de datos"
+        changes:
+         - insert:
+             tableName: users
+             columns:            
+             - column:
+                 name: login
+                 value: "juan"
+             - column:
+                 name: nombre
+                 value: "Juan Pablo"   
+             - column:
+                 name: apellido
+                 value: "Perez"                  
+             - column:
+                 name: email
+                 value: "juan@google.com"             
+             - column:
+                 name: password
+                 value: "juan"
+         - insert:
+             tableName: users
+             columns:              
+             - column:
+                 name: login
+                 value: "jose"
+             - column:
+                 name: nombre
+                 value: "Jose Fernando"
+             - column:
+                 name: apellido
+                 value: "Lopez"                   
+             - column:
+                 name: email
+                 value: "jose@google.com"             
+             - column:
+                 name: password
+                 value: "jose"
